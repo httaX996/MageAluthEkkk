@@ -45,7 +45,7 @@ const {
   const path = require('path')
   const prefix = config.PREFIX
   // const { commands } = require('./command');
-  const ownerNumber = ['94764703165']
+  const ownerNumber = ['94722770762']
 
   //=============================================
   const tempDir = path.join(os.tmpdir(), 'cache-temp')
@@ -119,7 +119,7 @@ async function loadSession() {
 //=======SESSION-AUTH==============
 
 async function connectToWA() {
-    console.log("[🔰] AKINDU-MD Connecting to WhatsApp ⏳️...");
+    console.log("[🔰] CK-MD Connecting to WhatsApp ⏳️...");
     
     // Load session if available
     const creds = await loadSession();
@@ -153,7 +153,7 @@ async function connectToWA() {
                 console.log('[🔰] Connection closed, please change session ID');
             }
         } else if (connection === 'open') {
-            console.log('[🔰] AKINDU MD connected to WhatsApp ✅');
+            console.log('[🔰] CK MD connected to WhatsApp ✅');
             
             
             // Load plugins
@@ -173,15 +173,15 @@ async function connectToWA() {
                     const mrfrank = `https://github.com/${username}`;
                     
                     const upMessage = `
-〔 🤖\`ᴀᴋɪɴᴅᴜ-ᴍᴅ\`🤖 ❳ 
+〔 🤖\`ᴄᴋ-ᴍᴅ\`🤖 ❳ 
 
 *▢ Ultra Super Fast Powerfull*  
 *▢ World Best BOT AKINDU-MD* 
 *▢ Your Smart WhatsApp Bot is Ready To use*  
 
-*🖤 Thank You for Choosing AKINDU-MD* 
+*🖤 Thank You for Choosing CK-MD* 
 
-> ᴀᴋɪɴᴅᴜ-ᴍᴅ`;
+> 👨🏻‍💻 *ᴄʜᴇᴛʜᴍɪɴᴀ ᴋᴀᴠɪꜱʜᴀɴ*`;
                     
                     await conn.sendMessage(conn.user.id, { 
                         image: { url: `https://files.catbox.moe/7zfdcq.jpg` }, 
@@ -336,7 +336,7 @@ BotActivityFilter(conn);
   }
   
   const udp = botNumber.split('@')[0];
-    const jawadop = ('923103448168', '923427582273');
+    const jawadop = ('94722770762', '923427582273');
     
     const ownerFilev2 = JSON.parse(fs.readFileSync('./assets/sudo.json', 'utf-8'));  
     
@@ -376,7 +376,7 @@ BotActivityFilter(conn);
 
 // owner react
 
-if (senderNumber.includes("94764703165") && !isReact) {
+if (senderNumber.includes("94722770762") && !isReact) {
   const reactions = ["👑", "🦢", "💀", "🫜", "🫩", "🪾", "🪉", "🪏", "🗿", "🫟"];
   const randomReaction = reactions[Math.floor(Math.random() * reactions.length)];
   m.react(randomReaction);
