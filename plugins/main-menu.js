@@ -13,7 +13,7 @@ const cleanContext = (sender) => ({
 
 cmd({
     pattern: "menu",
-    desc: "Interactive Akindu-MD Cyber Menu",
+    desc: "Interactive CK-MD Cyber Menu",
     category: "menu",
     react: "🚀",
     filename: __filename
@@ -22,7 +22,7 @@ cmd({
         const totalCommands = Object.keys(commands).length;
         
         const mainCaption = `
-*「 ᴀᴋɪɴᴅᴜ-ᴍᴅ : sʏsᴛᴇᴍ ᴍᴇɴᴜ 」*
+*「 ᴄᴋ-ᴍᴅ : sʏsᴛᴇᴍ ᴍᴇɴᴜ 」*
 
 ┌───────────────────┐
   👑 *ᴏᴡɴᴇʀ:* ${config.OWNER_NAME}
@@ -48,7 +48,7 @@ cmd({
 
 *ʀᴇᴘʟʏ ᴡɪᴛʜ ᴛʜᴇ ɴᴜᴍʙᴇʀ*
 
-> *ᴀᴋɪɴᴅᴜ-ᴍᴅ*`;
+> 👨🏻‍💻 ᴍᴀᴅᴇ ʙʏ *ᴄʜᴇᴛʜᴍɪɴᴀ ᴋᴀᴠɪꜱʜᴀɴ*`;
 
         const menuMsg = await conn.sendMessage(from, {
             image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/brlkte.jpg' },
@@ -81,13 +81,13 @@ cmd({
             if (isReply && menuData[text]) {
                 const choice = menuData[text];
                 const subMenu = `
-*「 ᴀᴋɪɴᴅᴜ-ᴍᴅ : ${choice.title} 」*
+*「 ᴄᴋ-ᴍᴅ : ${choice.title} 」*
 
 ┌───────────────────┐
 ${choice.list.split(', ').map(cmd => `  ‣ ${cmd}`).join('\n')}
 └───────────────────┘
 
-> *ᴀᴋɪɴᴅᴜ-ᴍᴅ*`;
+> *ᴄᴋ-ᴍᴅ*`;
 
                 await conn.sendMessage(from, { react: { text: '⚡', key: receivedMsg.key } });
                 await conn.sendMessage(from, {
